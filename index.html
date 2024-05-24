@@ -2,35 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
   <title>Music Player</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <a href="#"><img src="svg/home.svg" alt=""></a>
-                <h1 class="logo">QUANTIA</h1>
-            <a href="#"><img src="svg/settings.svg" alt=""></a>
+            <a href="#"><img src="svg/home.svg" alt="Home"></a>
+            <h1 class="logo">QUANTIA</h1>
+            <a href="#"><img src="svg/settings.svg" alt="Settings"></a>
         </nav>
         <div class="music-player">
             <div class="music-cover">
                 <img src="https://i.pinimg.com/236x/72/1b/08/721b0818a7810fee9c3762453234d888.jpg" alt="cover">
             </div>
             <audio id="audio" controls>
-                <source src="file/Ysmahnraster_-_Away.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <div class="controls">
                 <button id="play-btn"><img src="svg/play.svg" alt="Play"></button>
-                <button id="pause-btn"><img src="svg/cross.svg" alt="" srcset=""></button>
+                <button id="pause-btn"><img src="svg/pause.svg" alt="Pause"></button>
             </div>
-            <div class="playlist">
-                
+            <div class="file-input">
+                <input type="file" id="file-input" accept="audio/*">
+                <button id="file-input-btn">Select Music</button>
+            </div>
+            <div class="playlist" id="playlist">
+                <!-- Playlist items go here -->
             </div>
         </div>
         <script src="script.js"></script>
     </div>
-
 </body>
 </html>

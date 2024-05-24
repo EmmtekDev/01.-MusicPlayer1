@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="#"><img src="svg/home.svg" alt=""></a>
+                <h1 class="logo">QUANTIA</h1>
+            <a href="#"><img src="svg/settings.svg" alt=""></a>
+        </nav>
+        <div class="music-player">
+            <div class="music-cover">
+                <img src="https://i.pinimg.com/236x/72/1b/08/721b0818a7810fee9c3762453234d888.jpg" alt="cover">
+            </div>
+            <audio id="audio" controls>
+                <source src="file/Ysmahnraster_-_Away.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="controls">
+                <button id="play-btn"><img src="svg/play.svg" alt="Play"></button>
+                <button id="pause-btn"><img src="svg/cross.svg" alt="" srcset=""></button>
+            </div>
+            <div class="playlist">
+                
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </div>
+
+</body>
+</html>

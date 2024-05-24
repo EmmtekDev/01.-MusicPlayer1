@@ -1,0 +1,89 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primaryColor: #1b1b1b;
+    --secondaryColor: #f1863f;
+    --whiteColo: #fff;
+    --shadowdrop: rgba(176, 176, 176, 0.2) 0px 2px 8px 0px;
+}
+/* Mobile view */
+@media screen and (max-width: 600px) {
+    .container{
+        /* background-color: var(--primaryColor); */
+        background-image: url(https://i.pinimg.com/236x/db/1a/72/db1a7204198a1a02cbe252ff6d088498.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh;
+        display: block;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 10%;
+        width: 100%;
+        /* background: var(--secondaryColor); */
+        height: 10%;
+    }
+    nav a img{
+        width: 30px;
+        border: 2px solid var(--secondaryColor);
+        border-radius: 50px;
+        padding: 5px;
+    }
+    nav .logo{
+        color: var(--secondaryColor);
+        font-size: 1.3rem;
+        
+    }
+    .music-player {
+        display: grid;
+        place-items: center;
+        /* text-align: center; */
+        margin-top: 10%;
+    }
+    .music-cover{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        border: 2px solid var(--secondaryColor);
+        overflow: hidden;
+        margin-bottom: 50px;
+    }
+    .controls{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    button img{
+        width: 30px;
+        color: var(--secondaryColor);
+    }
+    .controls{
+        margin-top: 5%;
+    }
+    .controls button {
+        margin: 10px;
+        padding: 8px 16px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    .playlist{
+        width: 90%;
+        background: var(--whiteColo);
+        height: 238px;
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border: 3px solid var(--secondaryColor);
+        border-bottom: none;
+    }
+}
